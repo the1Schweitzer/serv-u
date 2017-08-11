@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script src="servu_parser.js"></script>
+</head>
+<body>
+<input onchange="filereader(this.files,LogParser)" type="file" />
+<br>
+<textarea id="parsedlogs" cols=120 rows=40 readonly></textarea>
+<table>
+<tr>
+<td>User</td>
+<td>Remote IP</td>
+<td>Local IP</td>
+</tr>
+<tr>
+<td><input type="text" id="user"></td>
+<td><input type="text" id="remote_ip"></td>
+<td><input type="text" id="local_ip"></td>
+</tr>
+</table>
+<button onclick="Filter()">Filter</button><br/>
+<label for="systeminfo">System Info:</label><br/>
+<textarea id="systeminfo" cols=60 rows=10 readonly></textarea>
+
+</body>
+</html>
